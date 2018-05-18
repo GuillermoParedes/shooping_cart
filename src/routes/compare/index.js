@@ -26,21 +26,27 @@ class Compare extends Component {
     this.refs.CompareA.setState({ ...carA })
   }
   handleChange = (selectedOption) => {
+    console.log(selectedOption);
     // this.setState({ selectedOption });
     console.log(`Selected: ${selectedOption.label}`);
+    console.log(this.refs);
+    let carB = _.find(JSONCARS, car => {
+      return car.id === selectedOption.value
+    })
+    this.refs.CompareB.setState({...carB})
   }
   filterCars () {
     let { id_car } = this.props.match.params;
-
-    let dataCars = _.filter(JSONCARS, car => {
-      if (car.id !== id_car) {
-        console.log("carFilter model", car);
-        return ({
-          value: car.id,
-          label: car.model
-        })
+    let dataCars = [];
+    for(let i in JSONCARS) {
+      let car = JSONCARS[i];
+      let newObj = {
+        value: car.id,
+        label: car.model
       }
-    })
+      dataCars.push(newObj);
+    }
+    console.log("FilterCars", dataCars);
     return dataCars;
   }
   render() {
@@ -60,6 +66,9 @@ class Compare extends Component {
           <div className="row">
             <div className="col-6">
               <Item ref='CompareA' />
+            </div>
+            <div className="col-6">
+              <Item ref='CompareB' />
             </div>
           </div>
         </div>
