@@ -40,11 +40,13 @@ class Compare extends Component {
     let dataCars = [];
     for(let i in JSONCARS) {
       let car = JSONCARS[i];
-      let newObj = {
-        value: car.id,
-        label: car.model
+      if (id_car !== car.id) {
+        let newObj = {
+          value: car.id,
+          label: car.model
+        }
+        dataCars.push(newObj); 
       }
-      dataCars.push(newObj);
     }
     console.log("FilterCars", dataCars);
     return dataCars;
