@@ -34,16 +34,16 @@ class Header extends Component {
               <div className="navbar-header">
                 <a href="/" className="navbar-brand">
                 <div className="brand-text brand-big">
-                  <span>React </span><strong>StarterKit</strong>
+                  <span>NearShore </span><strong>Code</strong>
                 </div>
-                <div className="brand-text brand-small"><strong>React StarterKit</strong></div></a>
+                <div className="brand-text brand-small"><strong>NearShore Code</strong></div></a>
                   <a id="toggle-btn"  className="menu-btn active" onClick={(event) => this.openNavigation(event)}>
                     <span /><span /><span />
                   </a>
               </div>
               <ul className="nav-menu list-unstyled d-flex flex-md-row align-items-md-center">
                 <li className="nav-item">
-                  <a href="https://github.com/GuillermoParedes/ReactStarterKit" className="nav-link logout">Repositorio
+                  <a href="https://github.com/GuillermoParedes/shooping_cart" className="nav-link logout">Repositorio
                     <i className="fa fa-github" />
                   </a>
                 </li>

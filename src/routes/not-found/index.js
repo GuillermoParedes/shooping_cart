@@ -25,7 +25,7 @@ const NotFound = () => {
               </div>
               <div className="error-actions">
                 <Link className="btn btn-primary btn-lg" to={'/'}>Return to home</Link>
-                <a href="https://github.com/mycodebad" className="btn btn-default btn-lg">
+                <a href="https://github.com/GuillermoParedes" className="btn btn-default btn-lg">
                   <span className="glyphicon glyphicon-envelope" /> Contact Support
                 </a>
               </div>
