@@ -1,0 +1,50 @@
+  [
+    {
+      "id": "bbdc91d9-47f2-476e-82fd-917b8f53aa57",
+      "model": "Toyota Corolla",
+      "price": 8000,
+      "color": "blue"
+    },
+    {
+      "id": "e1459184-fa51-4e5d-ac51-c2839427357f",
+      "model": "Nissan Pathfinder",
+      "price": 12000,
+      "color": "blue"
+    },
+    {
+      "id": "129233c2-7963-40bd-b4d3-7b245339b887",
+      "model": "Kia Rio",
+      "price": 8000,
+      "color": "green"
+    },
+    {
+      "id": "db657720-0071-495c-9df3-0922ff878ba6",
+      "model": "Rover",
+      "price": 8000,
+      "color": "green"
+    },
+    {
+      "id": "dbb1a614-acb3-493c-bcdc-ae96056426ef",
+      "model": "Smart",
+      "price": 8000,
+      "color": "green"
+    },
+    {
+      "id": "771df923-b707-43a1-9747-3123a9a080db",
+      "model": "MINI",
+      "price": 8000,
+      "color": "green"
+    },
+    {
+      "id": "364007f0-d1b0-46e9-89c3-67ac6a990099",
+      "model": "Fiat",
+      "price": 8000,
+      "color": "green"
+    },
+    {
+      "id": "407f750b-320d-4a9d-881f-a60f1253215e",
+      "model": "Volvo",
+      "price": 8000,
+      "color": "green"
+    }
+  ]

@@ -7,30 +7,17 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './home.scss';
-
+import JSONCARS from './../../api/cars.json';
+import { listItem as ListItem } from './../../components'
 class Home extends Component {
+  CompararParent(DataItem) {
+    this.props.history.push('/_compare/' + DataItem.id)
+  }
   render() {
     return (
       <div className="containerHome">
-        <div className="container-fluid">
-          <div className="row">
-            <div className="col-md-12">
-              <div className="success-template">
-                <h1>
-                  hi!</h1>
-
-                <div className="success-details">
-                  Welcome to Starter kit with React.JS
-                </div>
-                <div className="success-actions">
-                  
-                  <a href="https://github.com/mycodebad" className="btn btn-default btn-lg">
-                    <span className="glyphicon glyphicon-envelope" /> Contact me: GD/Guillermo David
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div className="container-fluid"> <br />
+          <ListItem list={JSONCARS} Comparar={(DataItem) => this.CompararParent(DataItem)}/>  
         </div>
       </div>
     );

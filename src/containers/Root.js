@@ -12,9 +12,11 @@ import {
 import App from './App';
 
 import Home from './../routes/home'
+import Compare from './../routes/compare'
 import NotFound from './../routes/not-found'
 
 const Root = (props) => {
+
   return (
     <Router>
       <App>
@@ -23,6 +25,7 @@ const Root = (props) => {
             <Redirect to="/_home" />
           )}/>
           <Route exact path="/_home" component={Home} />
+          <Route exact path="/_compare/:id_car" component={Compare} />
           <Route path="*" component={NotFound} />
         </Switch>
       </App>
